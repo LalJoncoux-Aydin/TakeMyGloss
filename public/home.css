@@ -1,0 +1,154 @@
+@font-face { font-family: Font_home; src: url('PlayfairDisplay-VariableFont_wght.ttf'); }
+html{
+    min-height:100%;
+    position:relative;
+}
+body{
+    height:100%;
+    background-color: #f7e1d7;
+    margin: 0;
+}
+h1 {
+  font-family: Font_home, sans-serif;
+}
+h2 {
+  font-family: Font_home, sans-serif;
+}
+.home {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.home .banner {
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  width: 100%;
+  background-color: #cb958e;
+  align-items: center;
+  flex-direction: column;
+  border: 1.28469px solid black;
+}
+
+.home .banner .title, .home .banner .nav {
+  display: flex;
+}
+
+.home .banner .nav {
+   width: 80%;
+   justify-content: space-around;
+}
+
+.home .banner .nav .new {
+  display: flex;
+  order: 1;
+}
+
+.home .banner .nav .new:hover .block {
+  height: 50px;
+  background-color: white;
+}
+
+.home .banner .nav .new .block h2{
+  display: none;
+}
+
+.home .banner .nav .new:hover .block h2{
+  display: flex;
+}
+
+.home .banner .nav .body_care {
+  display: flex;
+  order: 2;
+}
+
+.home .banner .nav .body_care:hover .block {
+  height: 50px;
+  background-color: white;
+}
+
+.home .banner .nav .body_care .block h2{
+  display: none;
+}
+
+.home .banner .nav .body_care:hover .block h2{
+  display: flex;
+}
+
+.home .banner .nav .mouth {
+  display: flex;
+  order: 3;
+}
+
+.home .banner .nav .mouth:hover .block {
+  height: 50px;
+  background-color: white;
+}
+
+.home .banner .nav .mouth .block h2{
+  display: none;
+}
+
+.home .banner .nav .mouth:hover .block h2{
+  display: flex;
+}
+
+.home .banner .nav .skin {
+  display: flex;
+  order: 4;
+}
+
+.home .banner .nav .skin:hover .block {
+  height: 50px;
+  background-color: white;
+}
+
+.home .banner .nav .skin .block h2{
+  display: none;
+}
+
+.home .banner .nav .skin:hover .block h2{
+  display: flex;
+}
+
+.home .banner .nav .eyes {
+  display: flex;
+  order: 5;
+}
+
+.home .banner .nav .eyes:hover .block {
+  height: 50px;
+  background-color: white;
+}
+
+.home .banner .nav .eyes .block h2{
+  display: none;
+}
+
+.home .banner .nav .eyes:hover .block h2{
+  display: flex;
+}
+
+.home .banner .nav .nails {
+  display: flex;
+  order: 6;
+}
+
+.home .banner .nav .nails:hover .block {
+  height: 50px;
+  background-color: white;
+}
+
+.home .banner .nav .nails .block h2{
+  display: none;
+}
+
+.home .banner .nav .nails:hover .block h2{
+  display: flex;
+}
