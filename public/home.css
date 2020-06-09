@@ -8,10 +8,7 @@ body{
     background-color: #f7e1d7;
     margin: 0;
 }
-h1 {
-  font-family: Font_home, sans-serif;
-}
-h2 {
+h1, h2, a {
   font-family: Font_home, sans-serif;
 }
 .home {
@@ -23,6 +20,28 @@ h2 {
   overflow: hidden;
   display: flex;
   align-items: center;
+}
+
+.home .login {
+  display: flex;
+  position: absolute;
+  top: 30px;
+  right: 50px;
+}
+
+.home .login a {
+  font-size: 25px;
+}
+
+.home .reg {
+  display: flex;
+  position: absolute;
+  top: 30px;
+  right: 250px;
+}
+
+.home .reg a {
+  font-size: 25px;
 }
 
 .home .banner {
@@ -50,35 +69,9 @@ h2 {
   order: 1;
 }
 
-.home .banner .nav .new:hover .block {
-  height: 50px;
-  background-color: white;
-}
-
-.home .banner .nav .new .block h2{
-  display: none;
-}
-
-.home .banner .nav .new:hover .block h2{
-  display: flex;
-}
-
 .home .banner .nav .body_care {
   display: flex;
   order: 2;
-}
-
-.home .banner .nav .body_care:hover .block {
-  height: 50px;
-  background-color: white;
-}
-
-.home .banner .nav .body_care .block h2{
-  display: none;
-}
-
-.home .banner .nav .body_care:hover .block h2{
-  display: flex;
 }
 
 .home .banner .nav .mouth {
@@ -86,35 +79,9 @@ h2 {
   order: 3;
 }
 
-.home .banner .nav .mouth:hover .block {
-  height: 50px;
-  background-color: white;
-}
-
-.home .banner .nav .mouth .block h2{
-  display: none;
-}
-
-.home .banner .nav .mouth:hover .block h2{
-  display: flex;
-}
-
 .home .banner .nav .skin {
   display: flex;
   order: 4;
-}
-
-.home .banner .nav .skin:hover .block {
-  height: 50px;
-  background-color: white;
-}
-
-.home .banner .nav .skin .block h2{
-  display: none;
-}
-
-.home .banner .nav .skin:hover .block h2{
-  display: flex;
 }
 
 .home .banner .nav .eyes {
@@ -122,33 +89,44 @@ h2 {
   order: 5;
 }
 
-.home .banner .nav .eyes:hover .block {
-  height: 50px;
-  background-color: white;
-}
-
-.home .banner .nav .eyes .block h2{
-  display: none;
-}
-
-.home .banner .nav .eyes:hover .block h2{
-  display: flex;
-}
-
 .home .banner .nav .nails {
   display: flex;
   order: 6;
 }
 
+.home .banner .nav .new:hover .block,
+.home .banner .nav .body_care:hover .block,
+.home .banner .nav .mouth:hover .block,
+.home .banner .nav .skin:hover .block,
+.home .banner .nav .eyes:hover .block,
 .home .banner .nav .nails:hover .block {
-  height: 50px;
-  background-color: white;
+  height: 200px;
+  background-color: black;
+  width: 200px;
+  position: absolute;
+  margin-top: 129px;
+  margin-left: -38px;
+  display: flex;
 }
 
-.home .banner .nav .nails .block h2{
+.home .banner .nav .new .block h2,
+.home .banner .nav .body_care .block h2,
+.home .banner .nav .mouth .block h2,
+.home .banner .nav .skin .block h2,
+.home .banner .nav .eyes .block h2,
+.home .banner .nav .nails .block h2 {
   display: none;
 }
 
-.home .banner .nav .nails:hover .block h2{
+.home .banner .nav .new:hover .block h2,
+.home .banner .nav .body_care:hover .block h2,
+.home .banner .nav .mouth:hover .block h2,
+.home .banner .nav .skin:hover .block h2,
+.home .banner .nav .eyes:hover .block h2,
+.home .banner .nav .nails:hover .block h2 {
   display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
