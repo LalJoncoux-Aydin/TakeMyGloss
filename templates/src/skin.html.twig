@@ -1,10 +1,12 @@
-{% extends 'base.html.twig' %}
+{% extends 'item.html.twig' %}
 
 {% block title %}Skin | Take my gloss{% endblock %}
 
-{% block body %}
+{% block stylesheets %}
+    {{ parent() }}
 
-<div>
-  <h2>caca</h2>
-</div>
+    <link href="item.css" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block body %}
 {% endblock %}
