@@ -5,10 +5,10 @@ html{
 }
 body{
     height:100%;
-    background-color: #f7e1d7;
+    background-color: #f5d3c8;
     margin: 0;
 }
-h1, h2, a {
+h1, h2, a, li {
   font-family: Font_home, sans-serif;
 }
 .home {
@@ -22,26 +22,40 @@ h1, h2, a {
   align-items: center;
 }
 
-.home .login {
+.home_nav {
+  align-items: unset;
+  flex-direction: column;
+  height: 205px;
+}
+
+.home .login,
+.home .logout {
   display: flex;
   position: absolute;
   top: 30px;
   right: 50px;
 }
 
-.home .login a {
+.home .login a,
+.home .logout a {
   font-size: 25px;
+  text-decoration: none;
+  color: black;
 }
 
-.home .reg {
+.home .reg,
+.home .profil {
   display: flex;
   position: absolute;
   top: 30px;
-  right: 250px;
+  right: 170px;
 }
 
-.home .reg a {
+.home .reg a,
+.home .profil a {
   font-size: 25px;
+  text-decoration: none;
+  color: black;
 }
 
 .home .banner {
@@ -57,6 +71,18 @@ h1, h2, a {
 
 .home .banner .title, .home .banner .nav {
   display: flex;
+}
+
+.home .banner .title a {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  text-decoration: unset;
+  color: black;
 }
 
 .home .banner .nav {
@@ -94,6 +120,23 @@ h1, h2, a {
   order: 6;
 }
 
+.home .banner .nav .new a,
+.home .banner .nav .body_care a,
+.home .banner .nav .mouth a,
+.home .banner .nav .skin a,
+.home .banner .nav .eyes a,
+.home .banner .nav .nails a {
+  text-decoration: unset;
+  color: black;
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
 .home .banner .nav .new:hover .block,
 .home .banner .nav .body_care:hover .block,
 .home .banner .nav .mouth:hover .block,
@@ -102,31 +145,53 @@ h1, h2, a {
 .home .banner .nav .nails:hover .block {
   height: 200px;
   background-color: black;
-  width: 200px;
+  width: 300px;
   position: absolute;
   margin-top: 129px;
-  margin-left: -38px;
+  margin-left: -80px;
   display: flex;
+  background-color: #bcbdc0;
 }
 
-.home .banner .nav .new .block h2,
-.home .banner .nav .body_care .block h2,
-.home .banner .nav .mouth .block h2,
-.home .banner .nav .skin .block h2,
-.home .banner .nav .eyes .block h2,
-.home .banner .nav .nails .block h2 {
+.home .banner .nav .new .block ul,
+.home .banner .nav .new .block ul li,
+.home .banner .nav .body_care .block ul,
+.home .banner .nav .body_care .block ul li,
+.home .banner .nav .mouth .block ul,
+.home .banner .nav .mouth .block ul li,
+.home .banner .nav .skin .block ul,
+.home .banner .nav .skin .block ul li,
+.home .banner .nav .eyes .block ul,
+.home .banner .nav .eyes .block ul li,
+.home .banner .nav .nails .block ul,
+.home .banner .nav .nails .block ul li {
   display: none;
 }
 
-.home .banner .nav .new:hover .block h2,
-.home .banner .nav .body_care:hover .block h2,
-.home .banner .nav .mouth:hover .block h2,
-.home .banner .nav .skin:hover .block h2,
-.home .banner .nav .eyes:hover .block h2,
-.home .banner .nav .nails:hover .block h2 {
+.home .banner .nav .new .block ul,
+.home .banner .nav .body_care .block ul,
+.home .banner .nav .mouth .block ul,
+.home .banner .nav .skin .block ul,
+.home .banner .nav .eyes .block ul,
+.home .banner .nav .nails .block ul {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  flex-flow: wrap;
+  margin-left: -78px;
+  padding: 0px;
+}
+
+.home .banner .nav .new:hover .block li,
+.home .banner .nav .body_care:hover .block li,
+.home .banner .nav .mouth:hover .block li,
+.home .banner .nav .skin:hover .block li,
+.home .banner .nav .eyes:hover .block li,
+.home .banner .nav .nails:hover .block li {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: black;
+  font-weight: bold;
 }
