@@ -24,3 +24,28 @@ h1, h2, a, li {
   background-color: #bcbdc0;
   border: 1.3px solid black;
 }
+
+.profile_page {
+  justify-content: center;
+  display: flex;
+  margin-top: 280px;
+}
+
+.profile_page .profile-image {
+  background-color: #bcbdc0;
+  height: 250px;
+  width: 250px;
+  margin-right: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile_page .profile-info {
+  width: 500px;
+  height: 400px;
+  background-color: #bcbdc0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

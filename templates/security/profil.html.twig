@@ -1,9 +1,21 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Profil{% endblock %}
+{% block title %}Profile{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+
+    <link href="registration.css" rel="stylesheet" type="text/css">
+{% endblock %}
 
 {% block body %}
-<div>
-  <h2>Profil</h2>
+<div class="profile_page">
+  <div class="profile-image">
+    <img src="user_img.png" height="200px">
+  </div>
+  <div class="profile-info">
+    <h2>Profile</h2>
+    <h3>Name : {{ app.user.username }}</h3>
+  </div>
 </div>
 {% endblock %}
